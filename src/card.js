@@ -5,8 +5,6 @@ import "./card.scss";
 
 const Card = ({ onClick, card, index, isInactive, isFlipped, isDisabled }) => {
   const handleClick = () => {
-    console.log(isFlipped, "~~~~~~~~~~isFlipped")
-    console.log(isDisabled, "!~~~~~~~~isDisabled")
     !isFlipped && !isDisabled && onClick(index);
   };
 
